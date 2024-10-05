@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/stringly2_backend"
+]
+resolver = "2"
