@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex items-center gap-4'>
                     <div>
-                        <button className={`px-4 py-2 rounded-xl ${isMenu ? 'bg-[#0B0A0A] text-white' : 'bg-[#FAFAFA] text-black'}`}>Join</button>
+                        <button className={`px-4 py-2 rounded-xl ${isMenu ? 'bg-[#0B0A0A] text-white' : 'hidden md:flex'} bg-white`}>Join</button>
                     </div>
                     <div className='flex md:hidden'>
                         <button className='text-xl' onClick={() => toggleMenu()}>
