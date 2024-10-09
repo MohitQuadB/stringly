@@ -13,8 +13,8 @@ const Navbar = () => {
     }
 
     return (
-        <div className='w-full bg-red bg-gray-200 position-fixed top-0 flex flex-col'>
-            <div className='flex items-center justify-between px-8 py-4'>
+        <div className='w-full relative bg-transparent fixed top-0 flex flex-col z-50'>
+            <div className='flex absolute top-0 left-0 right-0 text-white items-center bg-transparent justify-between px-8 py-4'>
                 <div>
                     <p className='text-2xl font-semibold text-[#DC73B6]'>Logo</p>
                 </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex items-center gap-4'>
                     <div>
-                        <button className={`px-4 py-2 rounded-xl ${isMenu ? 'bg-[#0B0A0A] text-white' : 'hidden md:flex'} bg-white`}>Join</button>
+                        <button className={`px-4 py-2 rounded-xl ${isMenu ? 'bg-[#0B0A0A] text-black' : 'hidden md:flex'} bg-white text-black`}>Join</button>
                     </div>
                     <div className='flex md:hidden'>
                         <button className='text-xl' onClick={() => toggleMenu()}>
@@ -58,8 +58,8 @@ export default Navbar
 export const Menu = () => {
     return (
         <>
-            <span className="bg-white w-full p-4 flex flex-col items-start justify-between gap-6 text-xl">
-                <p>
+            <span className="text-white absolute bg-transparent top-10 left-0 right-0 w-full p-8 flex flex-col items-start justify-between gap-6 text-xl">
+            <p>
                     <Link to="/">Home</Link>
                 </p>
                 <p>

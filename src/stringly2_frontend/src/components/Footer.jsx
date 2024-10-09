@@ -38,10 +38,10 @@ const Footer = () => {
                 <li>Term of use</li>
                 <li>Carrier</li>
             </ul>
-            <ul className='leading-8'>
+            <ul className='leading-8 w-[100%] md:w-auto'>
                 <li className='text-lg font-semi-bold pb-4'>About Us</li>
                 <li>Contact Us</li>
-                <input type="text" placeholder='Yout Email'className='rounded-2xl text-black bg-white px-2 p-1 my-2'/>
+                <input type="text" placeholder='Yout Email'className='rounded-2xl text-black bg-white px-2 my-4 p-1 my-2 w-full'/>
             </ul>
         </div>
       </div>

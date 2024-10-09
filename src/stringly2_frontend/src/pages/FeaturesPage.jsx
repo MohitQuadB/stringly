@@ -110,7 +110,7 @@ const FeaturesPage = () => {
             <section>
                 {/* first card */}
                 <div
-                    className={`ppp lg:flex relative items-center justify-between pt-24 ${hovered[0] ? 'hovered' : ''}`}
+                    className={`ppp p-4 py-8 lg:p-0 lg:flex relative items-center justify-between pt-24 ${hovered[0] ? 'hovered' : ''}`}
                     onMouseEnter={() => handleHover(0)}
                 >
                     <div className={`child hidden lg:block w-[616px] ml-[100px] m-auto opacity-0`}>
@@ -127,7 +127,7 @@ const FeaturesPage = () => {
                 </div>
 
                 {/* second card */}
-                <div className={`ppp lg:flex items-center justify-between ${hovered[1] ? 'hovered' : ''}`} onMouseEnter={() => handleHover(1)}>
+                <div className={`ppp p-4 py-8 lg:p-0 lg:flex items-center justify-between ${hovered[1] ? 'hovered' : ''}`} onMouseEnter={() => handleHover(1)}>
                     <div className='z-20'>
                         <img src="./features/Rectangle 2.png" alt="" className='h-screen lg:h-auto object-cover' />
                     </div>
@@ -161,7 +161,7 @@ const FeaturesPage = () => {
                     </div>
                 </div>
                 {/* third card */}
-                <div className={` ppp lg:flex items-center justify-between ${hovered[2] ? 'hovered' : ''}`} onMouseEnter={() => handleHover(2)}>
+                <div className={` ppp p-4 py-8 lg:p-0 lg:flex items-center justify-between ${hovered[2] ? 'hovered' : ''}`} onMouseEnter={() => handleHover(2)}>
                     <div className='child hidden lg:block w-[756px] w-[616px] ml-[100px] m-auto  opacity-0 '>
                         <div>
                             <p className='font-roboto font-bold text-[40px] leading-[48px]'>
@@ -206,7 +206,7 @@ const FeaturesPage = () => {
                 </div>
             </section>
             <section>
-                <div className='flex items-center justify-center gap-10'>
+                <div className='px-4 lg:p-0 flex items-center justify-center gap-10'>
                     <div className='w-[616px] hidden lg:block'>
                         <div>
                         <p className='text-[48px] font-sf font-semibold'>Experience the Luxury of Meaningful Connections</p>
@@ -228,13 +228,13 @@ const FeaturesPage = () => {
                 </div>
             </section>
             <div className='flex items-center justify-center flex-col mb-20'>
-                <div className='flex items-center justify-center flex-col w-[727px]'>
-                    <p className='font-roboto text-[48px] font-bold leading-[57px] py-6'>Join the Exclusive Network</p>
+                <div className='flex items-center justify-center flex-col p-8 lg:w-[727px]'>
+                    <p className='font-roboto text-[32px] lg:text-[48px] text-center font-bold  leading-[38px] lg:leading-[57px] py-6'>Join the Exclusive Network</p>
                     <p className='font-roboto font-regular text-[18px] leading-[27px] text-center'>Experience luxury and privacy like never before with Stringly’s unique dating and networking platform.</p>
                 </div>
                 <div className='flex items-center justify-between gap-8 py-10'>
-                    <button className='bg-black text-white p-2 px-4 font-sf rounded-lg'>Sign Up</button>
-                    <button className='border-2 border-black p-2 px-4 font-sf rounded-lg'>Learn More</button>
+                    <button className='bg-black text-white p-3 px-8 font-sf rounded-lg'>Sign Up</button>
+                    <button className='border-2 border-black p-3 px-8 font-sf rounded-lg'>Learn More</button>
                 </div>
             </div>
         </>
