@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('/path/to/fonts/SFProDisplay-Regular.woff2') format('woff2'),
+         url('/path/to/fonts/SFProDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('/path/to/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+         url('/path/to/fonts/SFProDisplay-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    scroll-behavior: smooth;
+}
+
+.card-image {
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-image {
+    transform: scale(1.1);
+}
+
+.card-content {
+    transition: top 0.5s ease;
+}
+
+.card:hover .card-content {
+    top: 150px;
+}
+
+.card-description {
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .card-description {
+    opacity: 1;
+}
+
+.card-button {
+    transform: translateX(-200%);
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-button {
+    transform: translateX(0);
+}
+
+.card:hover .learnMore {
+    opacity: 0;
+    transition: .5s ease;
+}
+
+
+
+.ppp.hovered .child {
+    animation: slideIn 1s forwards;
+}
+
+.ppp.hovered .child-2 {
+    animation: slideIn2 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn2 {
+    from {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.child {
+    opacity: 0;
+    transform: translateX(500px);
+    transition: none;
+}
+
+.child-2 {
+    opacity: 0;
+    transform: translateX(-500px);
+    transition: none;
+}
+
+.ppp.hovered .child {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.ppp.hovered .child-2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.backdrop-blur-custom {
+    background: linear-gradient(to right, rgba(248, 168, 154, 0.2),  rgba(161, 203, 243, 0.2));
+    backdrop-filter: blur(1500px);
+}
+
