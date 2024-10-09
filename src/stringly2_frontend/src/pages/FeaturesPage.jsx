@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { motion } from 'framer-motion';
 import { FaChevronRight } from "react-icons/fa";
 
 const FeaturesPage = () => {
@@ -123,7 +122,7 @@ const FeaturesPage = () => {
                         </p>
                     </div>
                     <div className='lg:w-auto z-20'>
-                        <img src="./features/Card4.png" alt="" className='h-screen lg:h-auto object-cover' />
+                        <img src="./features/Rectangle 1.png" alt="" className='h-screen lg:h-auto object-cover' />
                     </div>
                 </div>
 
@@ -196,10 +195,10 @@ const FeaturesPage = () => {
             <section className='backdrop-blur-custom'>
                 <div className='flex items-center justify-center text-center py-10'>
                     <div className='flex items-center justify-center flex-col text-center w-[568px] p-[18px] gap-[32px]'>
-                        <img src="./features/webflow-Logo.png" alt="" />
+                        <img src="./features/Logo_webflow.png" alt="" />
                         <p>"Stringly transformed my dating life. The luxury and privacy made all the difference in finding genuine connections."</p>
                         <div className='flex items-center justify-center flex-col text-center'>
-                            <img src="./features/profile.png" alt="" className='pb-4'/>
+                            <img src="./features/Profile.png" alt="" className='pb-4'/>
                             <p>Emily Johnson</p>
                             <p>Marketing Director, LuxeCo</p>
                         </div>

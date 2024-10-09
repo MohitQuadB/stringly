@@ -21,6 +21,22 @@ export default {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
+    fontFamily: {
+      'jakarta': ['"Plus Jakarta Sans"', 'sans-serif'],
+      'roboto' : ['"Roboto"', 'sans-serif'],
+      'sf': ['SF Pro Display', 'sans-serif'],
+    },
+    fontWeight: {
+      'thin': 100,
+      'extralight': 200,
+      'light': 300,
+      'regular': 400,
+      'medium': 500,
+      'semibold': 600,
+      'bold': 700,
+      'extrabold': 800,
+      'black': 900,
+    },
     extend: {},
   },
   plugins: [],
