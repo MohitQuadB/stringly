@@ -26,7 +26,7 @@ const Navbar = () => {
                         <Link to="/features">Features</Link>
                     </p>
                     <p>
-                        <Link to="/product">About Us</Link>
+                        <Link to="/about">About Us</Link>
                     </p>
                     <div className='flex items-center gap-2'>
                         <Link to="/contact">Resources</Link>
@@ -66,7 +66,7 @@ export const Menu = () => {
                     <Link to="/shop">Features</Link>
                 </p>
                 <p>
-                    <Link to="/product">About Us</Link>
+                    <Link to="/about">About Us</Link>
                 </p>
                 <div className='flex items-center gap-2'>
                     <Link to="/contact">Resources</Link>

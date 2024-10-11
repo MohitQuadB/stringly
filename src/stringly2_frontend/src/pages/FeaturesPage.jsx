@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaChevronRight } from "react-icons/fa";
+import JoinPage from '../components/JoinPage';
 
 const FeaturesPage = () => {
     const [hovered, setHovered] = useState([false, false, false]);
@@ -198,7 +199,7 @@ const FeaturesPage = () => {
                         <img src="./features/Logo_webflow.png" alt="" />
                         <p>"Stringly transformed my dating life. The luxury and privacy made all the difference in finding genuine connections."</p>
                         <div className='flex items-center justify-center flex-col text-center'>
-                            <img src="./features/Profile.png" alt="" className='pb-4'/>
+                            <img src="./features/Profile.png" alt="" className='pb-4' />
                             <p>Emily Johnson</p>
                             <p>Marketing Director, LuxeCo</p>
                         </div>
@@ -209,8 +210,8 @@ const FeaturesPage = () => {
                 <div className='px-4 lg:p-0 flex items-center justify-center gap-10'>
                     <div className='w-[616px] hidden lg:block'>
                         <div>
-                        <p className='text-[48px] font-sf font-semibold'>Experience the Luxury of Meaningful Connections</p>
-                        <p className='font-jakarta font-regular leading-[27px] text-[18px] py-4'>Stringly offers a unique blend of privacy and luxury, ensuring that every connection is secure and exclusive. Enjoy access to a curated community of high-profile users who value meaningful interactions.</p>
+                            <p className='text-[48px] font-sf font-semibold'>Experience the Luxury of Meaningful Connections</p>
+                            <p className='font-jakarta font-regular leading-[27px] text-[18px] py-4'>Stringly offers a unique blend of privacy and luxury, ensuring that every connection is secure and exclusive. Enjoy access to a curated community of high-profile users who value meaningful interactions.</p>
                         </div>
                         <ul className='font-sf font-regular leading-[30px]'>
                             <li>Enhanced privacy for your personal and professional connections.</li>
@@ -223,20 +224,11 @@ const FeaturesPage = () => {
                         </div>
                     </div>
                     <div>
-                        <img src="./features/Placeholder Image.png" alt="" className='object-cover'/>
+                        <img src="./features/Placeholder Image.png" alt="" className='object-cover' />
                     </div>
                 </div>
             </section>
-            <div className='flex items-center justify-center flex-col mb-20'>
-                <div className='flex items-center justify-center flex-col p-8 lg:w-[727px]'>
-                    <p className='font-roboto text-[32px] lg:text-[48px] text-center font-bold  leading-[38px] lg:leading-[57px] py-6'>Join the Exclusive Network</p>
-                    <p className='font-roboto font-regular text-[18px] leading-[27px] text-center'>Experience luxury and privacy like never before with Stringly’s unique dating and networking platform.</p>
-                </div>
-                <div className='flex items-center justify-between gap-8 py-10'>
-                    <button className='bg-black text-white p-3 px-8 font-sf rounded-lg'>Sign Up</button>
-                    <button className='border-2 border-black p-3 px-8 font-sf rounded-lg'>Learn More</button>
-                </div>
-            </div>
+            <JoinPage />
         </>
 
     )
